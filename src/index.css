@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif!important;
+    font-optical-sizing: auto!important;
+    line-height: 1  ;
+}
+
 :root {
     overflow-wrap: break-word;
     text-wrap: pretty;
@@ -16,7 +24,7 @@
     font-weight: bold;
 }
 .para {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: auto;
     font-weight: 100;
@@ -55,7 +63,7 @@
     padding: 5px;
 }
 .card .card-title {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 0px 20px;
 }

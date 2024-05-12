@@ -2,14 +2,20 @@
   width: 100%;
   margin: 1.25rem 0;
   display: grid;
-  grid-template-columns: 10% 10% 10%;
+  grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
   justify-items: center;
 }
 
+@media (max-width: 640px) {
+  .chips {
+    grid-template-columns: auto;
+  }
+}
+
 .chip {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.25rem;
 }
 
 .chip div {
@@ -65,4 +71,52 @@ tr, th, td {
 }
 .package-list-item span {
   padding-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .sales-team-card .card-stack {
+    grid-template-columns: auto auto!important;
+  }
+}
+@media (max-width: 640px) {
+  .sales-team-card .card-stack {
+    grid-template-columns: auto!important;
+  }
+}
+@media (max-width: 1118px) {
+  .human-icon {
+    right: 20%!important;
+  }
+}
+@media (max-width: 1050px) {
+  .human-icon {
+    right: 17%!important;
+  }
+}
+@media (max-width: 936px) {
+  .human-icon {
+    right: 13%!important;
+  }
+}
+@media (max-width: 832px) {
+  .human-icon {
+    right: 10%!important;
+  }
+}
+@media (max-width: 778px) {
+  .human-icon {
+    right: 7%!important;
+  }
+}
+@media (max-width: 712px) {
+  .human-icon {
+    right: 3%!important;
+  }
+}
+@media (max-width: 658px) {
+  .human-icon {
+    position: relative!important;
+    margin: 1rem auto !important;
+    right: 0%!important;
+  }
 }

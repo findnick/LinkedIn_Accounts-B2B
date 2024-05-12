@@ -5,12 +5,59 @@ import Card from "./components/common/Card";
 import CardStack from "./components/common/CardStack";
 import GrayScale from "./assets/gray-img.png";
 import IndexTable from "./components/uncommon/IndexTable";
-import USFlag from "./assets/us-flag.png";
-import InfoIcon from "@mui/icons-material/Info";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Package from "./components/uncommon/Package";
 
 const App = () => {
+  const automatedAgents = [
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+    {
+      image: GrayScale,
+      title: "Scalability",
+      footer:
+        "You don't need to hire, manage, or train your agents. There are no commissions being paid out, and you don't need to vet them for quality work. Just go focus on fullfillment and scaling your business internally while our system helps you get clients. All you need is to respond back to prospects & monitor your campaign.",
+    },
+  ];
   const howItWorks = [
     {
       image: { GrayScale },
@@ -40,19 +87,19 @@ const App = () => {
       </div>
       <div className="index-section">
         <div className="heading">
-          The #1 B2B
           <img
-            src={GrayScale}
-            alt=""
-            style={{
-              borderRadius: 45,
-              width: 80,
-              position: "absolute",
-              right: 0,
-              marginLeft: 48,
-              marginTop: 12,
-            }}
-          />
+              src={GrayScale}
+              alt=""
+              className="human-icon"
+              style={{
+                borderRadius: 45,
+                width: 80,
+                position: 'absolute',
+                right: "25%",
+                bottom: "52%",
+              }}
+            />
+          The #1 B2B
           <br />
           Prospecting Service
         </div>
@@ -69,12 +116,12 @@ const App = () => {
           BOOK A DEMO
         </a>
       </div>
-      <div className="index-section">
+      <div className="index-section sales-team-card">
         <div className="heading">Building an Internal</div>
         <div className="heading">Sales Team</div>
         <CardStack
           display="grid"
-          gridTemplateColumns="25% 25% 25%"
+          gridTemplateColumns="auto auto auto"
           margin="0px 10%"
           justifyContent="center"
           justifyItems="center"
@@ -87,11 +134,12 @@ const App = () => {
             }}
             cardTitle="AVERAGE SALARY"
             height={"200px"}
+            image={GrayScale}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "15px",
+              fontSize: "1rem",
             }}
           >
             <div>$134,281</div>
@@ -105,11 +153,12 @@ const App = () => {
             }}
             cardTitle="HIRING & TRAINING"
             height={"200px"}
+            image={GrayScale}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "15px",
+              fontSize: "1rem",
             }}
           >
             <div>120-180 Days</div>
@@ -122,11 +171,12 @@ const App = () => {
             }}
             cardTitle="ROI"
             height={"200px"}
-            titleStyle={{ textAlign: "center", fontSize: "40px" }}
+            image={GrayScale}
+            titleStyle={{ textAlign: "center", fontSize: "3rem" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "15px",
+              fontSize: "1rem",
             }}
           >
             <div>28% of reps hit quota</div>
@@ -135,7 +185,7 @@ const App = () => {
         <div className="heading">vs</div>
         <CardStack
           display="grid"
-          gridTemplateColumns="25% 25% 25%"
+          gridTemplateColumns="auto auto auto"
           margin="0px 10%"
           justifyContent="center"
           justifyItems="center"
@@ -148,11 +198,12 @@ const App = () => {
             }}
             cardTitle="AVERAGE SALARY"
             height={"200px"}
+            image={GrayScale}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "24px",
+              fontSize: "1.3rem",
             }}
           >
             <div>$180/month</div>
@@ -165,11 +216,12 @@ const App = () => {
             }}
             cardTitle="HIRING & TRAINING"
             height={"200px"}
+            image={GrayScale}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "24px",
+              fontSize: "1.3rem",
             }}
           >
             <div>3-7 Days</div>
@@ -182,11 +234,12 @@ const App = () => {
             }}
             cardTitle="ROI"
             height={"200px"}
-            titleStyle={{ textAlign: "center", fontSize: "40px" }}
+            image={GrayScale}
+            titleStyle={{ textAlign: "center", fontSize: "3rem" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
-              fontSize: "24px",
+              fontSize: "1.3rem",
             }}
           >
             <div>97% Success Rate</div>
@@ -198,204 +251,40 @@ const App = () => {
           Why Automated <br /> LinkedIn Agents?
         </div>
         <CardStack display="flex" flexDirection="column" alignItems="center">
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              gridTemplateAreas: "'title title logo' 'footer footer logo'",
-              gridTemplateColumns: "40% 50% 10%",
-              gridTemplateRows: "30% 70%",
-              padding: 0,
-            }}
-            cardTitle="Scalability"
-            logoStyle={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "15px 13px 90px 7px",
-              gridArea: "logo",
-            }}
-            imgStyle={{ width: "100%" }}
-            titleStyle={{ gridArea: "title", alignSelf: "end" }}
-            footerStyle={{
-              fontSize: 20,
-              gridArea: "footer",
-              paddingLeft: 20,
-              alignSelf: "start",
-            }}
-          >
-            <p>
-              You don&#39;t need to hire, manage, or train your agents. There
-              are no commissions being paid out, and you don&#39;t need to vet
-              them for quality work. Just go focus on fullfillment and scaling
-              your business internally while our system helps you get clients.
-              All you need is to respond back to prospects & monitor your
-              campaign.
-            </p>
-          </Card>
+          {automatedAgents.map((agents, index) => {
+            return (
+              <Card
+                key={index}
+                style={{
+                  display: "grid",
+                  gridTemplateAreas: "'title title logo' 'footer footer logo'",
+                  gridTemplateColumns: "auto auto auto",
+                  gridTemplateRows: "auto auto",
+                  padding: "1rem 0",
+                }}
+                cardTitle={agents.title}
+                logoStyle={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  padding: "15px 13px 90px 7px",
+                  gridArea: "logo",
+                  width: "7rem",
+                  height: 200,
+                }}
+                image={agents.image}
+                imgStyle={{ width: "100%" }}
+                titleStyle={{ gridArea: "title", alignSelf: "end" }}
+                footerStyle={{
+                  fontSize: 20,
+                  gridArea: "footer",
+                  paddingLeft: 20,
+                  alignSelf: "start",
+                }}
+              >
+                <p>{agents.footer}</p>
+              </Card>
+            );
+          })}
         </CardStack>
       </div>
       <div className="index-section" style={{ marginTop: 100 }}>
@@ -423,6 +312,7 @@ const App = () => {
                   padding: "0.75rem 1rem 0.75rem 0.15rem",
                 }}
                 logoStyle={{ margin: "0 auto" }}
+                image={card.image}
                 imgStyle={{ padding: 5, width: "5rem" }}
                 cardTitle={card.title}
                 titleStyle={{ fontSize: "1rem" }}
@@ -442,7 +332,13 @@ const App = () => {
         <div className="heading">Pricing</div>
         <div className="packages flex flex-row flex-wrap">
           <Package cost="150" />
-          <Package cost="180" style={{background: "linear-gradient(#1048e5, #2751c5)", color: "#fff"}} />
+          <Package
+            cost="180"
+            style={{
+              background: "linear-gradient(#1048e5, #2751c5)",
+              color: "#fff",
+            }}
+          />
         </div>
       </div>
     </>
