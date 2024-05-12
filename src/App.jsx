@@ -5,25 +5,32 @@ import Card from "./components/common/Card";
 import CardStack from "./components/common/CardStack";
 import GrayScale from "./assets/gray-img.png";
 import IndexTable from "./components/uncommon/IndexTable";
+import USFlag from "./assets/us-flag.png";
+import InfoIcon from "@mui/icons-material/Info";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import Package from "./components/uncommon/Package";
 
 const App = () => {
   const howItWorks = [
     {
-      image: {GrayScale},
+      image: { GrayScale },
       title: "Onboarding",
-      footer: "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible."
+      footer:
+        "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
     },
     {
-      image: {GrayScale},
-      title: "Onboarding",
-      footer: "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible."
+      image: { GrayScale },
+      title: "Campaigning Launch",
+      footer:
+        "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
     },
     {
-      image: {GrayScale},
-      title: "Onboarding",
-      footer: "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible."
-    }
-  ]
+      image: { GrayScale },
+      title: "Dedicated Support",
+      footer:
+        "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
+    },
+  ];
 
   return (
     <>
@@ -398,18 +405,45 @@ const App = () => {
         </div>
       </div>
       <div className="index-section">
-        <div className="heading">
-          How it Works:
-        </div>
+        <div className="heading">How it Works:</div>
         <CardStack display="flex" flexDirection="row" flexWrap="wrap">
-            {
-              howItWorks.map((card) => {
-                return (
-                  <Card key={card.title}>{card.footer}</Card>
-                )
-              })
-            }
+          {howItWorks.map((card, index) => {
+            console.log(index);
+            return (
+              <Card
+                key={index}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-around",
+                  margin: "20px auto",
+                  width: "18rem",
+                  height: "330px",
+                  textAlign: "left",
+                  padding: "0.75rem 1rem 0.75rem 0.15rem",
+                }}
+                logoStyle={{ margin: "0 auto" }}
+                imgStyle={{ padding: 5, width: "5rem" }}
+                cardTitle={card.title}
+                titleStyle={{ fontSize: "1rem" }}
+                footerStyle={{
+                  fontWeight: "100",
+                  fontSize: "15px",
+                  padding: "20px",
+                }}
+              >
+                {card.footer}
+              </Card>
+            );
+          })}
         </CardStack>
+      </div>
+      <div className="index-section">
+        <div className="heading">Pricing</div>
+        <div className="packages flex flex-row flex-wrap">
+          <Package cost="150" />
+          <Package cost="180" style={{background: "linear-gradient(#1048e5, #2751c5)", color: "#fff"}} />
+        </div>
       </div>
     </>
   );

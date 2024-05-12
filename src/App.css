@@ -42,3 +42,27 @@ thead th {
 tr, th, td {
   border: 3px solid #5c84f3 !important;
 }
+
+.package-card {
+  border: 3px solid #5c84f3 !important;
+  border-radius: 40px;
+}
+
+.package-button button {
+  background: linear-gradient(#5c84f3, #0f4bf1);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-flag {
+  width: 5rem;
+}
+
+.package-list-item {
+  padding: 0.5rem 0 ;
+  font-size: 0.75rem;
+}
+.package-list-item span {
+  padding-right: 0.5rem;
+}
