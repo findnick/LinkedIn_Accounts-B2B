@@ -3,8 +3,12 @@ import InfoIcon from "@mui/icons-material/Info";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export default function Package ({cost, style}) {
+  // const paymentProcessor = () => {
+  //   const packageCost = cost;
+  // }
+
   return (
-    <div className="package-card flex flex-col flex-wrap mx-auto my-10 py-5 px-5" style={style}>
+    <div className="package-card flex flex-col flex-wrap my-10 py-5 px-3" style={style}>
       <div className="package-card-header flex flex-row flex-wrap justify-between items-center">
         <div className="package-card-country flex flex-col flex-wrap">
           <p className="country-name font-extrabold text-4xl">USA</p>

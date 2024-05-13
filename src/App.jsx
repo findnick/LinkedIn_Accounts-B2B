@@ -6,9 +6,13 @@ import CardStack from "./components/common/CardStack";
 import GrayScale from "./assets/gray-img.png";
 import IndexTable from "./components/uncommon/IndexTable";
 import Package from "./components/uncommon/Package";
+import Footer from "./components/common/Footer";
+import Sales1 from "./assets/Material/ICON 7-01.png";
+import Sales2 from "./assets/Material/ICON 8-01.png";
+import Sales3 from "./assets/Material/ICON 9-01.png";
 
 const App = () => {
-  const automatedAgents = [
+  const automatedAgents = [ 
     {
       image: GrayScale,
       title: "Scalability",
@@ -60,19 +64,19 @@ const App = () => {
   ];
   const howItWorks = [
     {
-      image: { GrayScale },
+      image: GrayScale,
       title: "Onboarding",
       footer:
         "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
     },
     {
-      image: { GrayScale },
+      image: GrayScale,
       title: "Campaigning Launch",
       footer:
         "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
     },
     {
-      image: { GrayScale },
+      image: GrayScale,
       title: "Dedicated Support",
       footer:
         "Once you purchase your agents, we will add you into Slack & have you fill out your onboarding form. This will help us optimize your accounts and get you ramped up as soon as possible.",
@@ -116,7 +120,7 @@ const App = () => {
           BOOK A DEMO
         </a>
       </div>
-      <div className="index-section sales-team-card">
+      <div className="index-section sales-team-card">``
         <div className="heading">Building an Internal</div>
         <div className="heading">Sales Team</div>
         <CardStack
@@ -131,10 +135,12 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="AVERAGE SALARY"
             height={"200px"}
-            image={GrayScale}
+            image={Sales1}
+            imgStyle={{width: "33%"}}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
@@ -150,10 +156,12 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="HIRING & TRAINING"
             height={"200px"}
-            image={GrayScale}
+            image={Sales2}
+            imgStyle={{width: "33%"}}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
@@ -168,11 +176,13 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="ROI"
             height={"200px"}
-            image={GrayScale}
-            titleStyle={{ textAlign: "center", fontSize: "3rem" }}
+            image={Sales3}
+            imgStyle={{width: "33%"}}
+            titleStyle={{ textAlign: "center", fontSize: "2rem" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
@@ -195,10 +205,12 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="AVERAGE SALARY"
             height={"200px"}
-            image={GrayScale}
+            image={Sales1}
+            imgStyle={{width: "33%"}}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
@@ -213,10 +225,12 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="HIRING & TRAINING"
             height={"200px"}
-            image={GrayScale}
+            image={Sales2}
+            imgStyle={{width: "33%"}}
             titleStyle={{ textAlign: "center" }}
             footerStyle={{
               textAlign: "center",
@@ -231,11 +245,13 @@ const App = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
+              width: "65%",
             }}
             cardTitle="ROI"
             height={"200px"}
-            image={GrayScale}
-            titleStyle={{ textAlign: "center", fontSize: "3rem" }}
+            image={Sales3}
+            imgStyle={{width: "33%"}}
+            titleStyle={{ textAlign: "center", fontSize: "2rem" }}
             footerStyle={{
               textAlign: "center",
               fontWeight: "bold",
@@ -330,7 +346,7 @@ const App = () => {
       </div>
       <div className="index-section">
         <div className="heading">Pricing</div>
-        <div className="packages flex flex-row flex-wrap">
+        <div className="packages flex flex-row flex-wrap justify-evenly">
           <Package cost="150" />
           <Package
             cost="180"
@@ -341,6 +357,7 @@ const App = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
