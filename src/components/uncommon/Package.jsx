@@ -42,7 +42,7 @@ export default function Package ({cost, style, buttonStyle}) {
     try{
       const response = await fetch({price:cost},{
         "x-auth-token":localStorage.getItem('token'),
-        "Access-Control-Allow-Headers": "YourHeader, YourHeader2, YourHeader3"
+        "Access-Control-Allow-Headers": "x-auth-token"
       })
       const result = stripe.redirectToCheckout({sessionId: response.data.id});
       if (result.error) {
