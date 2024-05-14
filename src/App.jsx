@@ -17,6 +17,54 @@ import Agents2 from "./assets/Material/ICON 5-01.png";
 import Agents3 from "./assets/Material/ICON 6-01.png";
 import LandingCarousel from "./components/uncommon/LandingCarousel";
 import HumanIcon from "./assets/Material/IMAGE WITH CIRCLE SHAPE-01.png";
+import car1 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.40.35 PM.png";
+import car2 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.41.45 PM.png";
+import car3 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.42.28 PM.png";
+import car4 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.43.01 PM.png";
+import car5 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.43.47 PM.png";
+import car6 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.44.02 PM.png";
+import car7 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.44.41 PM.png";
+import car8 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.45.03 PM.png";
+import car9 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.45.33 PM.png";
+import car10 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.46.04 PM.png";
+import car11 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.48.21 PM.png";
+import car12 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.48.36 PM.png";
+import car13 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.48.54 PM.png";
+import car14 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.49.17 PM.png";
+import car15 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.49.25 PM.png";
+import car16 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.50.10 PM.png";
+import car17 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.50.21 PM.png";
+import car18 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.50.49 PM.png";
+import car19 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.50.57 PM.png";
+import car20 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.51.05 PM.png";
+import car21 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.51.13 PM.png";
+import car22 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.52.30 PM.png";
+import car23 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.52.44 PM.png";
+import car24 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.53.03 PM.png";
+import car25 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.54.30 PM.png";
+import car26 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.54.40 PM.png";
+import car27 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.54.46 PM.png";
+import car28 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.55.08 PM.png";
+import car29 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.55.31 PM.png";
+import car30 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.55.42 PM.png";
+import car31 from "./assets/Material/Results/Screenshot 2024-04-19 at 11.17.43 AM.png";
+import car32 from "./assets/Material/Results/Screenshot 2024-04-19 at 11.21.21 AM.png";
+import car33 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.14.17 PM.png";
+import car34 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.15.15 PM.png";
+import car35 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.17.05 PM.png";
+import car36 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.19.12 PM.png";
+import car37 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.21.00 PM.png";
+import car38 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.22.10 PM.png";
+import car39 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.22.30 PM.png";
+import car40 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.24.29 PM.png";
+import car41 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.24.51 PM.png";
+import car45 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.26.48 PM.png";
+import car46 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.28.45 PM.png";
+import car47 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.29.43 PM.png";
+import car48 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.35.25 PM.png";
+import car49 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.36.11 PM.png";
+import car50 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.38.20 PM.png";
+import car51 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.41.41 PM.png";
 
 const App = () => {
   const automatedAgents = [
@@ -79,149 +127,149 @@ const App = () => {
   ];
   const images = [
     {
-      url: "assets/Screenshot 2024-03-16 at 3.40.35 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.41.45 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.42.28 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.43.01 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.43.47 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.44.02 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.44.41 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.45.03 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.45.33 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.46.04 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.48.21 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.48.36 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.48.54 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.49.17 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.49.25 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.50.10 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.50.21 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.50.49 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.50.57 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.51.05 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.51.13 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.52.30 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.52.44 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.53.03 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.54.30 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.54.40 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.54.46 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.55.08 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.55.31 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-03-16 at 3.55.42 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-04-19 at 11.17.43 AM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-04-19 at 11.21.21 AM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.14.17 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.15.15 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.17.05 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.19.12 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.21.00 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.22.10 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.22.30 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.24.29 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.24.51 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.26.48 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.28.45 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.29.43 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.35.25 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.36.11 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.38.20 PM.png",
-    },
-    {
-      url: "assets/Screenshot 2024-05-03 at 3.41.41 PM.png",
-    },
+      url: car1,
+      },
+      {
+      url: car2,
+      },
+      {
+      url: car3,
+      },
+      {
+      url: car4,
+      },
+      {
+      url: car5,
+      },
+      {
+      url: car6,
+      },
+      {
+      url: car7,
+      },
+      {
+      url: car8,
+      },
+      {
+      url: car9,
+      },
+      {
+      url: car10,
+      },
+      {
+      url: car11,
+      },
+      {
+      url: car12,
+      },
+      {
+      url: car13,
+      },
+      {
+      url: car14,
+      },
+      {
+      url: car15,
+      },
+      {
+      url: car16,
+      },
+      {
+      url: car17,
+      },
+      {
+      url: car18,
+      },
+      {
+      url: car19,
+      },
+      {
+      url: car20,
+      },
+      {
+      url: car21,
+      },
+      {
+      url: car22,
+      },
+      {
+      url: car23,
+      },
+      {
+      url: car24,
+      },
+      {
+      url: car25,
+      },
+      {
+      url: car26,
+      },
+      {
+      url: car27,
+      },
+      {
+      url: car28,
+      },
+      {
+      url: car29,
+      },
+      {
+      url: car30,
+      },
+      {
+      url: car31,
+      },
+      {
+      url: car32,
+      },
+      {
+      url: car33,
+      },
+      {
+      url: car34,
+      },
+      {
+      url: car35,
+      },
+      {
+      url: car36,
+      },
+      {
+      url: car37,
+      },
+      {
+      url: car38,
+      },
+      {
+      url: car39,
+      },
+      {
+      url: car40,
+      },
+      {
+      url: car41,
+      },
+      {
+      url: car45,
+      },
+      {
+      url: car46,
+      },
+      {
+      url: car47,
+      },
+      {
+      url: car48,
+      },
+      {
+      url: car49,
+      },
+      {
+      url: car50,
+      },
+      {
+      url: car51,
+      },
   ];
 
   return (
@@ -502,7 +550,7 @@ const App = () => {
             }}
             buttonStyle={{
               background: "#FFF",
-              color: "var(--light)"
+              color: "var(--light)",
             }}
           />
         </div>
@@ -518,7 +566,7 @@ const App = () => {
         ></div>
       </div>
       <div className="index-section my-12">
-          <LandingCarousel images={images} />
+        <LandingCarousel images={images} />
       </div>
       <Footer />
     </>
