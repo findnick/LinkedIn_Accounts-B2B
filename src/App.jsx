@@ -79,148 +79,148 @@ const App = () => {
   ];
   const images = [
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.40.35 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.40.35 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.41.45 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.41.45 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.42.28 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.42.28 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.43.01 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.43.01 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.43.47 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.43.47 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.44.02 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.44.02 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.44.41 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.44.41 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.45.03 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.45.03 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.45.33 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.45.33 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.46.04 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.46.04 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.48.21 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.48.21 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.48.36 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.48.36 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.48.54 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.48.54 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.49.17 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.49.17 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.49.25 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.49.25 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.50.10 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.50.10 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.50.21 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.50.21 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.50.49 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.50.49 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.50.57 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.50.57 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.51.05 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.51.05 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.51.13 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.51.13 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.52.30 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.52.30 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.52.44 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.52.44 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.53.03 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.53.03 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.54.30 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.54.30 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.54.40 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.54.40 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.54.46 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.54.46 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.55.08 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.55.08 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.55.31 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.55.31 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-03-16 at 3.55.42 PM.png",
+      url: "assets/Results/Screenshot 2024-03-16 at 3.55.42 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-04-19 at 11.17.43 AM.png",
+      url: "assets/Results/Screenshot 2024-04-19 at 11.17.43 AM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-04-19 at 11.21.21 AM.png",
+      url: "assets/Results/Screenshot 2024-04-19 at 11.21.21 AM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.14.17 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.14.17 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.15.15 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.15.15 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.17.05 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.17.05 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.19.12 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.19.12 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.21.00 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.21.00 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.22.10 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.22.10 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.22.30 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.22.30 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.24.29 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.24.29 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.24.51 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.24.51 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.26.48 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.26.48 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.28.45 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.28.45 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.29.43 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.29.43 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.35.25 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.35.25 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.36.11 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.36.11 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.38.20 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.38.20 PM.png",
     },
     {
-      url: "../src/assets/Material/Results/Screenshot 2024-05-03 at 3.41.41 PM.png",
+      url: "assets/Results/Screenshot 2024-05-03 at 3.41.41 PM.png",
     },
   ];
 
