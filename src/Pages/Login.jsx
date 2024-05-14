@@ -14,6 +14,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useForm } from "react-hook-form";
 import usePostApi from "../Apis/usePostApi";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Copyright(props) {
   return (
@@ -38,18 +40,33 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function Login() {
+  const [auth, setAuth] = useState(false);
+
+  React.useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setAuth(true);
+    } else {
+      setAuth(false);
+    }
+  }, []);
+  
+  const navigate = useNavigate();
+  if (auth) {
+    return navigate("/");
+  }
   const [postData, setPostData, response, fetch] = usePostApi("user/login");
   const [error, setError] = React.useState("");
 
   React.useEffect(() => {
     if (error) {
-      setTimeout(() => {
-        setError(false);
-      }, 4000);
+      // setTimeout(() => {
+      // }, 4000);
+
+      setError(false);
     }
   }, [error]);
 
-  
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -65,6 +82,9 @@ export default function Login() {
         setError({ password: true });
       } else if (response.data.msg == "User with this email doesnot exists") {
         setError({ email: true });
+      } else if (response.data.token) {
+        localStorage.setItem("token", response.data.token)
+        return navigate("/");
       }
 
       console.log("The error is: ", response);
@@ -143,10 +163,10 @@ export default function Login() {
             >
               Login
             </Button>
-            <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="center">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
+                <Link href="/Signup" variant="body2">
+                  Not Have an Account? Signup Now
                 </Link>
               </Grid>
             </Grid>

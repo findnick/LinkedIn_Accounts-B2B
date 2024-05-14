@@ -15,19 +15,22 @@
     text-wrap: pretty;
     word-wrap: break-word;
     word-break: break-word;
+
+    --light: #1e95fe;
+    --dark: #3154c8
 }
 
 .heading {
-    font-size: 80px;
+    font-size: 3.5rem;
     text-align: center;
     margin: auto;
-    font-weight: bold;
+    font-weight: 800;
 }
 .para {
     font-size: 30px;
     text-align: center;
     margin: auto;
-    font-weight: 100;
+    font-weight: 350;
 }
 .heading, .para {
     margin: 10px 0;
@@ -36,11 +39,11 @@
     margin: 20px auto;
     font-size: 28px;
     text-align: center;
-    font-weight: 500;
-    background: linear-gradient(#5c84f3, #0f4bf1);
+    font-weight: 700;
+    background: linear-gradient(var(--light), var(--dark));
     text-decoration: none !important;
     color: #fff;
-    padding: 9px 35px;
+    padding: 15px 35px;
     border-radius: 55px;
 }
 .card {
@@ -50,7 +53,7 @@
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
-    background: linear-gradient(#5c84f3, #0f4bf1);
+    background: linear-gradient(var(--light), var(--dark));
     border-radius: 22px;
     color: #fff;
     box-shadow: #0a09099e 5px 3px 5px 3px;
@@ -66,4 +69,9 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0px 20px;
+}
+
+nav div.text-sm > a:hover {
+    color: var(--dark);
+    border-bottom: 2px dashed var(--light);
 }

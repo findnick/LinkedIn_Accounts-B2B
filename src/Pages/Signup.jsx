@@ -14,6 +14,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useForm } from "react-hook-form";
 import usePostApi from "../Apis/usePostApi";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Copyright(props) {
   return (
@@ -38,6 +40,21 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+  const [auth, setAuth] = useState(false);
+
+  React.useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setAuth(true);
+    } else {
+      setAuth(false);
+    }
+  }, []);
+  
+  const navigate = useNavigate();
+  if (auth) {
+    return navigate("/");
+  }
   const [postData, setPostData, response, fetch] = usePostApi("user/register");
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -51,6 +68,10 @@ export default function SignUp() {
     try {
       const response = await fetch(user);
       console.log("The error is: ", response);
+      if (response.data.token) {
+        localStorage.setItem("token", response.data.token)
+        return navigate("/");
+      }
     } catch (error) {
       console.log("The Error is: ", error);
     }
@@ -151,9 +172,9 @@ export default function SignUp() {
             >
               Sign Up
             </Button>
-            <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="center">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/login" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>

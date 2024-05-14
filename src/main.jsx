@@ -16,6 +16,10 @@ const routes = [
     element: <SignUp />
   },
   {
+    path: '/signup',
+    element: <SignUp />
+  },
+  {
     path: '/login',
     element: <Login />
   }

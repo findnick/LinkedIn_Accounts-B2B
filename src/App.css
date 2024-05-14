@@ -16,12 +16,14 @@
 
 .chip {
   margin: 0.5rem 0.25rem;
+  background: #9eecff8a;
+  border-radius: 7px;
 }
 
 .chip div {
   min-width: 100px;
-  border-radius: 6px;
-  font-weight: 900 !important;
+  border-radius: 7px;
+  font-weight: 750 !important;
 }
 
 .index-section {
@@ -30,9 +32,13 @@
   flex-direction: column;
 }
 
+#price-table {
+  background: url("assets/Material/SHAPE'S-01.png") !important;
+}
+
 .index-table {
   margin: 80px;
-  border: 4px solid #5c84f3;
+  border: 4px solid linear-gradient(var(--light), var(--dark));
 }
 
 table {
@@ -46,19 +52,24 @@ thead th {
 }
 
 tr, th, td {
-  border: 3px solid #5c84f3 !important;
+  border: 3px solid var(--light) !important;
+}
+
+td, tbody th {
+  font-weight: 600!important;
 }
 
 .package-card {
-  border: 3px solid #5c84f3 !important;
   border-radius: 40px;
 }
 
+
 .package-button button {
-  background: linear-gradient(#5c84f3, #0f4bf1);
+  background: linear-gradient(var(--light), var(--dark));
   border-radius: 10px;
   font-size: 1.25rem;
   font-weight: 600;
+  padding: 0.6rem 3rem;
 }
 
 .card-flag {
@@ -73,6 +84,17 @@ tr, th, td {
   padding-right: 0.5rem;
 }
 
+.slick-arrow {
+  background-image: linear-gradient(var(--light), var(--dark))!important;
+  width: 2rem!important;
+  height: 2rem!important;
+}
+
+.index-carousel .image-container {    
+  box-shadow: 5px 8px 9px 4px #c3bbbb;
+  border-radius: 18px;
+}
+
 @media (max-width: 768px) {
   .sales-team-card .card-stack {
     grid-template-columns: auto auto!important;
@@ -85,35 +107,30 @@ tr, th, td {
 }
 @media (max-width: 1118px) {
   .human-icon {
-    right: 20%!important;
+    right: 16%!important;
   }
 }
 @media (max-width: 1050px) {
   .human-icon {
-    right: 17%!important;
+    right: 12%!important;
   }
 }
 @media (max-width: 936px) {
   .human-icon {
-    right: 13%!important;
+    right: 7%!important;
   }
 }
 @media (max-width: 832px) {
   .human-icon {
-    right: 10%!important;
+    right: 2%!important;
   }
 }
 @media (max-width: 778px) {
   .human-icon {
-    right: 7%!important;
+    right: 0%!important;
   }
 }
 @media (max-width: 712px) {
-  .human-icon {
-    right: 3%!important;
-  }
-}
-@media (max-width: 658px) {
   .human-icon {
     position: relative!important;
     margin: 1rem auto !important;

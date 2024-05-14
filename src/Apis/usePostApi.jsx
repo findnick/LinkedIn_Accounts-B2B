@@ -5,9 +5,9 @@ function usePostApi(path) {
   const [postData, setPostData] = useState('');
   const [response, setResponse] = useState('');
 
-  const fetch = async (data) => {
+  const fetch = async (data,header=null) => {
     try {
-      const response = await axios.post(`https://linkedbackendinfinal.vercel.app/api/${path}`, data)
+      const response = await axios.post(`https://linkedbackendinfinal.vercel.app/api/${path}`, data, {headers:header})
       console.log(response);
       return response
     } catch (error) {
