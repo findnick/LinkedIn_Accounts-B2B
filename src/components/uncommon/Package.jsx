@@ -26,19 +26,7 @@ export default function Package ({cost, style, buttonStyle}) {
       return navigate("/login");
     }
     const stripe = await loadStripe("pk_test_51N6gMzHZgk0coxBwvmwFAoRfjbCaNhSlYFChLFO1OLWdXWmE2SPDUhxclnIlDTBc0LAyYvCmd2DMLLJWUWIDcI2a00GamT67fQ");
-    // const body = {
-    //   price: cost,
-    //   user: localStorage.getItem("token"),
-    // }
-    // const headers = {
-    //   "Content-Type": "application/json",
-    // }
-    // const response = await fetch(api, {
-    //   method: "POST",
-    //   headers: headers,
-    //   body: JSON.stringify(body)
-    // });
-    // const session = await response.json();
+    
     try{
       const response = await fetch({price:cost},{
         "Access-Control-Allow-Origin": "*",
