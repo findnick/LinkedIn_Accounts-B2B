@@ -42,28 +42,28 @@ function ResponsiveAppBar() {
       <div className="block flex-grow flex items-center w-auto">
         <div className="text-sm mx-auto">
           <a
-            href="#responsive-header"
+            href="/"
             className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Home
           </a>
           <a
-            href="#responsive-header"
+            href="#price-table"
             className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Features
           </a>
           <a
-            href="#responsive-header"
+            href="#packages"
             className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Pricing
           </a>
           <a
-            href="#responsive-header"
+            href="#demo-call"
             className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
