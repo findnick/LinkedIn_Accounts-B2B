@@ -41,9 +41,9 @@ export default function Package ({cost, style, buttonStyle}) {
     // const session = await response.json();
     try{
       const response = await fetch({price:cost},{
-        "x-auth-token":localStorage.getItem('token'),
-        "Access-Control-Allow-Headers": "x-auth-token",
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-auth-token",
+        "x-auth-token":localStorage.getItem('token'),
       })
       const result = stripe.redirectToCheckout({sessionId: response.data.id});
       if (result.error) {
