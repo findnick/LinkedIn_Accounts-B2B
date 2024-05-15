@@ -25,10 +25,10 @@ const rows = [
 export default function IndexTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650, wordBreak: "normal"  }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell sx={{width: "10rem"}}>FEATURES</TableCell>
+            <TableCell>FEATURES</TableCell>
             <TableCell align="left">MARKETING AGENCY</TableCell>
             <TableCell align="left">IN HOUSE SALES TEAM</TableCell>
             <TableCell align="left">LINKEDIN AGENTS</TableCell>

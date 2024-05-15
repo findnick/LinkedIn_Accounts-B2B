@@ -462,6 +462,7 @@ const App = () => {
             return (
               <Card
                 key={index}
+                cardClass = "automated-agent"
                 style={{
                   display: "grid",
                   gridTemplateAreas: "'title title logo' 'footer footer logo'",
