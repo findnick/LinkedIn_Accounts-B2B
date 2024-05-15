@@ -16,7 +16,7 @@ import Agents1 from "./assets/Material/ICON 4-01.png";
 import Agents2 from "./assets/Material/ICON 5-01.png";
 import Agents3 from "./assets/Material/ICON 6-01.png";
 import LandingCarousel from "./components/uncommon/LandingCarousel";
-import HumanIcon from "./assets/Material/IMAGE WITH CIRCLE SHAPE-01.png";
+import HumanIcon from "./assets/Material/IMAGE WITH CIRCLE SHAPE-01-updated.png";
 import car1 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.40.35 PM.png";
 import car2 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.41.45 PM.png";
 import car3 from "./assets/Material/Results/Screenshot 2024-03-16 at 3.42.28 PM.png";
@@ -280,20 +280,18 @@ const App = () => {
       <div className="chips">
         <Chips />
       </div>
-      <div className="index-section my-12">
-        <div className="heading">
+      <div className="index-section my-12 mt-0 sm:mt-12">
           <img
             src={HumanIcon}
             alt=""
             className="human-icon"
             style={{
               borderRadius: 45,
-              width: "15rem",
-              position: "absolute",
-              right: "22%",
-              bottom: "40%",
+              width: "6rem",
+              margin: "auto",
             }}
           />
+        <div className="heading">
           The #1 B2B
           <br />
           Prospecting Service

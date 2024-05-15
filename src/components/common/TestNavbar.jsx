@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-import logo from "../../assets/LA-Logos/LAL-2.png";
+import logo from "../../assets/LA-Logos/LAL-2-updated.png";
 
 const TestNavbar = () => {
   const [auth, setAuth] = useState(false);
@@ -45,10 +45,10 @@ const TestNavbar = () => {
     },
   ];
   return (
-    <nav className="p-5 flex items-center justify-between">
+    <nav className="p-5 flex items-center justify-between break-normal">
       <div className="flex">
-        <img src={logo} alt="" className="h-10 inline" />
-        <button className="nav-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" name="menu" onClick={(e) => {
+        <a href="/"><img src={logo} alt="" className="h-10 inline" /></a>
+        <button className="md:hidden block nav-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" name="menu" onClick={(e) => {
             console.log(e.currentTarget.name);
             let list = document.querySelector('ul');
 
@@ -64,10 +64,10 @@ const TestNavbar = () => {
           </svg>
         </button>
       </div>
-      <ul className="bg-inherit sm:bg-transparent z-[1] sm:z-auto absolute sm:static w-full left-0 sm:w-auto mx-auto sm:flex sm:items-center mb-4 sm:mb-0 py-4 sm:py-0 opacity-0 sm:opacity-100 top-[-400px] transition-all ease in duration-200">
+      <ul className="bg-inherit md:bg-transparent z-[1] md:z-auto absolute md:static w-full left-0 md:w-auto mx-auto md:flex md:items-center mb-4 md:mb-0 py-4 md:py-0 opacity-0 md:opacity-100 top-[-400px] transition-all ease in duration-200">
         {linkList.map((link, index) => {
           return (
-            <li key={index} className="mx-4 my-1 sm:my-0">
+            <li key={index} className="mx-4 my-1 md:my-0">
               <a href={link.url} className="text-lg duration-100">
                 {link.title}
               </a>
