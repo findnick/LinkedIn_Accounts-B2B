@@ -71,7 +71,31 @@
     padding: 0px 20px;
 }
 
-nav div.text-sm > a:hover {
+nav {
+    background: rgb(201 223 229);
+}
+nav .nav-button {
     color: var(--dark);
-    border-bottom: 2px dashed var(--light);
+    border: 0px;
+    width: 3rem;
+    justify-content: center;
+}
+nav .nav-button:hover {
+    color: var(--light);
+}
+nav li a {
+    font-weight: 600;
+    align-self: auto;
+}
+nav li a:hover {
+    color: var(--dark);
+    border-bottom: 3px dashed var(--light);
+    font-weight: 600;
+}
+nav a.section-button {
+    padding: 8px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    height: 2rem;
 }

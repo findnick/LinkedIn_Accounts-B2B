@@ -27,7 +27,7 @@ function ResponsiveAppBar() {
           <img src={Logo} alt="" width={"100%"} />
         </a>
       </div>
-      <div className="block hidden">
+      <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
           <svg
             className="fill-current h-3 w-3"
@@ -43,28 +43,28 @@ function ResponsiveAppBar() {
         <div className="text-sm mx-auto">
           <a
             href="/"
-            className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
+            className="block inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Home
           </a>
           <a
             href="#price-table"
-            className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
+            className="block inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Features
           </a>
           <a
             href="#packages"
-            className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
+            className="block inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Pricing
           </a>
           <a
             href="#demo-call"
-            className="block mt-4 inline-block mt-0 text-black hover:text-white mx-8"
+            className="block inline-block mt-0 text-black hover:text-white mx-8"
             style={{ fontWeight: 700 }}
           >
             Demo Call

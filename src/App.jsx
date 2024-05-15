@@ -65,6 +65,7 @@ import car48 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.35.25 PM
 import car49 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.36.11 PM.png";
 import car50 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.38.20 PM.png";
 import car51 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.41.41 PM.png";
+import TestNavbar from "./components/common/TestNavbar";
 
 const App = () => {
   const automatedAgents = [
@@ -274,7 +275,8 @@ const App = () => {
 
   return (
     <>
-      <ResponsiveAppBar />
+      {/* <ResponsiveAppBar /> */}
+      <TestNavbar />
       <div className="chips">
         <Chips />
       </div>
