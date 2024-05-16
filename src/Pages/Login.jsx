@@ -60,10 +60,10 @@ export default function Login() {
 
   React.useEffect(() => {
     if (error) {
-      // setTimeout(() => {
-      // }, 4000);
+      setTimeout(() => {
+        // setError(false);
+      }, 4000);
 
-      setError(false);
     }
   }, [error]);
 
@@ -78,6 +78,7 @@ export default function Login() {
     };
     try {
       const response = await fetch(user);
+      setError(false);
       if (response.data.msg == "Password Incorrect") {
         setError({ password: true });
       } else if (response.data.msg == "User with this email doesnot exists") {

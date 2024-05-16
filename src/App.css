@@ -9,12 +9,19 @@
 }
 
 .chip {
+  z-index: 0;
   margin: 0.5rem 0.25rem;
-  background: #9eecff8a;
   border-radius: 7px;
+  transition: transform 0.8s;
+}
+.chip:hover {
+  cursor: default;
+  z-index: 1;
+  transform: scale(1.2);
 }
 
 .chip div {
+  background: #9fd2df8a;
   min-width: 100px;
   border-radius: 7px;
   font-weight: 750 !important;
@@ -36,21 +43,42 @@
 }
 
 table {
-  min-width: 0!important;
+  min-width: 0 !important;
+}
+
+table * {
+  cursor: default !important;
 }
 
 thead th {
   font-weight: 900 !important;
   font-size: 15px !important;
-  text-align: center!important;
+  text-align: center !important;
+}
+thead th:hover {
+  border: 3px dashed var(--dark)!important;
+  background: linear-gradient(var(--light), var(--dark))!important;
+  color: #fff;
 }
 
-tr, th, td {
+tr,
+th,
+td {
   border: 3px solid var(--light) !important;
 }
 
-td, tbody th {
-  font-weight: 600!important;
+td,
+tbody th {
+  font-weight: 600 !important;
+}
+
+tbody th:hover{
+  background: var(--dark)!important;
+  color: #fff!important;
+}
+tbody td:hover{
+  background: var(--light)!important;
+  color: #fff!important;
 }
 
 .package-card {
@@ -65,115 +93,150 @@ td, tbody th {
   font-weight: 600;
   padding: 0.6rem 3rem;
 }
+.package-button button:hover {
+  background: var(--dark)!important;
+  color: #fff!important;
+}
+.package-button button:active {
+  background: #fff!important;
+  color: var(--light)!important;
+}
 
 .card-flag {
   width: 5rem;
 }
 
+.card-flag img {
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 3px #706363ab;
+}
+
 .package-list-item {
-  padding: 0.5rem 0 ;
+  padding: 0.5rem 0;
   font-size: 0.75rem;
 }
+
 .package-list-item span {
   padding-right: 0.5rem;
 }
 
 .slick-arrow {
-  background-image: linear-gradient(var(--light), var(--dark))!important;
-  width: 2rem!important;
-  height: 2rem!important;
+  background-image: linear-gradient(var(--light), var(--dark)) !important;
+  width: 2rem !important;
+  height: 2rem !important;
 }
 
-.index-carousel .image-container {    
+.index-carousel .image-container {
   box-shadow: 5px 8px 9px 4px #c3bbbb;
   border-radius: 18px;
 }
 
 @media (max-width: 768px) {
   .sales-team-card .card-stack {
-    grid-template-columns: auto auto!important;
+    grid-template-columns: auto auto !important;
   }
 }
+
 @media (max-width: 640px) {
   .chips {
     grid-template-columns: auto;
   }
+
   .automated-agent {
     grid-template-areas: "title title logo"
-                          "footer footer footer"!important;
-    grid-template-columns: auto auto auto!important;
-    grid-template-rows: auto auto!important;
+      "footer footer footer" !important;
+    grid-template-columns: auto auto auto !important;
+    grid-template-rows: auto auto !important;
   }
+
   .automated-agent .card-logo {
     width: auto !important;
-    height: 87px!important;
-    padding-bottom: 10px!important;
+    height: 87px !important;
+    padding-bottom: 10px !important;
   }
+
   .automated-agent .card-logo img {
-    width: 53%!important;
+    width: 53% !important;
   }
+
   .automated-agent .card-title {
-    align-self: flex-start!important;
+    align-self: flex-start !important;
     padding-top: 20px !important;
   }
+
   .sales-team-card .card-stack {
-    grid-template-columns: auto!important;
+    grid-template-columns: auto !important;
   }
-  thead th, tbody tr>* {
-    font-size: 12px!important;
+
+  thead th,
+  tbody tr>* {
+    font-size: 12px !important;
   }
 }
+
 @media (max-width: 576px) {
-  thead th, tbody tr>* {
-    font-size: 8px!important;
+
+  thead th,
+  tbody tr>* {
+    font-size: 8px !important;
   }
 }
+
 @media (max-width: 440px) {
-  thead th, table td {
-    padding: 2px!important;
+
+  thead th,
+  table td {
+    padding: 2px !important;
   }
 }
+
 @media (max-width: 350px) {
   table {
-    word-break: break-all!important;
+    word-break: break-all !important;
   }
 }
 
 
 @media (max-width: 1118px) {
   .human-icon {
-    right: 16%!important;
+    right: 16% !important;
   }
 }
+
 @media (max-width: 1050px) {
   .human-icon {
-    right: 12%!important;
+    right: 12% !important;
   }
 }
+
 @media (max-width: 936px) {
   .human-icon {
-    right: 7%!important;
+    right: 7% !important;
   }
 }
+
 @media (max-width: 832px) {
   .human-icon {
-    right: 2%!important;
+    right: 2% !important;
   }
 }
+
 @media (max-width: 778px) {
   .human-icon {
-    right: 0%!important;
+    right: 0% !important;
   }
 }
+
 @media (max-width: 712px) {
   .human-icon {
-    position: relative!important;
+    position: relative !important;
     margin: 1rem auto !important;
-    right: 0%!important;
+    right: 0% !important;
   }
 }
+
 @media (max-width: 480px) {
   .automated-agent .card-logo img {
-    width: 80%!important;
+    width: 80% !important;
   }
 }

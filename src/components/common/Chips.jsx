@@ -3,7 +3,7 @@ import Chip from "@mui/material/Chip";
 const Chips = () => {
     return (
         <>
-            <div className="chip">
+            <div className="chip cursor-default">
                 <Chip label="100% Automated" />
             </div>
             <div className="chip">

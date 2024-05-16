@@ -275,7 +275,6 @@ const App = () => {
 
   return (
     <>
-      {/* <ResponsiveAppBar /> */}
       <TestNavbar />
       <div className="chips">
         <Chips />
@@ -567,6 +566,7 @@ const App = () => {
         ></div>
       </div>
       <div className="index-section my-12">
+        <div className="heading">Results</div>
         <LandingCarousel images={images} />
       </div>
       <Footer />
