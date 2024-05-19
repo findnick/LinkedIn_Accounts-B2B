@@ -57,8 +57,8 @@ thead th {
 }
 thead th:hover {
   border: 3px dashed var(--dark)!important;
-  background: linear-gradient(var(--light), var(--dark))!important;
-  color: #fff;
+  /* background: linear-gradient(var(--light), var(--dark))!important; */
+  /* color: #fff; */
 }
 
 tr,
@@ -72,14 +72,14 @@ tbody th {
   font-weight: 600 !important;
 }
 
-tbody th:hover{
+/* tbody th:hover{
   background: var(--dark)!important;
   color: #fff!important;
 }
 tbody td:hover{
   background: var(--light)!important;
   color: #fff!important;
-}
+} */
 
 .package-card {
   border-radius: 40px;

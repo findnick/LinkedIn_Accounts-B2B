@@ -1,5 +1,5 @@
 import ResponsiveAppBar from "./components/common/ResponsiveAppBar";
-import "../src/App.css";
+import "../src/styles/App.css";
 import Chips from "./components/common/Chips";
 import Card from "./components/common/Card";
 import CardStack from "./components/common/CardStack";
@@ -66,6 +66,7 @@ import car49 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.36.11 PM
 import car50 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.38.20 PM.png";
 import car51 from "./assets/Material/Results/Screenshot 2024-05-03 at 3.41.41 PM.png";
 import TestNavbar from "./components/common/TestNavbar";
+import altResult from "./assets/Material/trello linkedin-accounts image.jpg";
 
 const App = () => {
   const automatedAgents = [
@@ -280,16 +281,16 @@ const App = () => {
         <Chips />
       </div>
       <div className="index-section my-12 mt-0 sm:mt-12">
-          <img
-            src={HumanIcon}
-            alt=""
-            className="human-icon"
-            style={{
-              borderRadius: 45,
-              width: "6rem",
-              margin: "auto",
-            }}
-          />
+        <img
+          src={HumanIcon}
+          alt=""
+          className="human-icon"
+          style={{
+            borderRadius: 45,
+            width: "6rem",
+            margin: "auto",
+          }}
+        />
         <div className="heading">
           The #1 B2B
           <br />
@@ -304,7 +305,7 @@ const App = () => {
           <br />
           customers. Directly. Effectively. Affordably.
         </div>
-        <a href="/login" className="section-button">
+        <a href="#packages" className="section-button">
           BOOK A DEMO
         </a>
       </div>
@@ -461,7 +462,7 @@ const App = () => {
             return (
               <Card
                 key={index}
-                cardClass = "automated-agent"
+                cardClass="automated-agent"
                 style={{
                   display: "grid",
                   gridTemplateAreas: "'title title logo' 'footer footer logo'",
@@ -567,7 +568,12 @@ const App = () => {
       </div>
       <div className="index-section my-12">
         <div className="heading">Results</div>
-        <LandingCarousel images={images} />
+        {         
+          /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (<LandingCarousel images={images} />) : (
+            <img src={altResult} alt="" />
+          )
+        }
+        
       </div>
       <Footer />
     </>

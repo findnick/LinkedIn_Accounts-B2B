@@ -1,0 +1,41 @@
+.stepper {
+    background: linear-gradient(var(--light), var(--dark));
+}
+.stepper * {
+    color: #fff!important;
+}
+.stepper > div {
+    margin-bottom: 2.25rem;
+}
+.stepper text {
+    fill: var(--light);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.stepper span {
+    font-size: 1.5rem;
+}
+.forms {
+    background-color: #fff;
+}
+.form button:disabled {
+    background: #1f23266b;
+}
+.form .package-card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form .selected, .form .package-card:hover {
+    box-shadow: 0px 0px 0px 3px var(--light);
+}
+.form .package-list {
+    margin: 2rem auto;
+}
+.form .package-list-item {
+    font-size: 1.25rem!important;
+    font-weight: 300;
+}
+.form .section-button {
+    font-size: 1rem!important;
+    padding: 1rem 7rem;
+}

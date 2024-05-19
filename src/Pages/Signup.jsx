@@ -39,7 +39,8 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function SignUp() {
+export default function SignUp(props) {
+  const {action} = props;
   const [auth, setAuth] = useState(false);
 
   React.useEffect(() => {
@@ -53,11 +54,13 @@ export default function SignUp() {
   
   const navigate = useNavigate();
   if (auth) {
-    return navigate("/");
+    // return navigate("/");
   }
   const [postData, setPostData, response, fetch] = usePostApi("user/register");
   const handleSubmit = async (event) => {
     event.preventDefault();
+    document.getElementById('signupButton').disabled = true;
+    document.getElementById('signupButton').innerText  = "LOADING...";
     const data = new FormData(event.currentTarget);
     const user = {
       name: data.get("firstName"),
@@ -69,12 +72,15 @@ export default function SignUp() {
       const response = await fetch(user);
       console.log("The error is: ", response);
       if (response.data.token) {
-        localStorage.setItem("token", response.data.token)
-        return navigate("/");
+        sessionStorage.setItem("token", response.data.token)
+        action();
+        // return navigate("/");
       }
     } catch (error) {
       console.log("The Error is: ", error);
     }
+    document.getElementById('signupButton').disabled = false;
+    document.getElementById('signupButton').innerText  = "Sign Up";
   };
 
   return (
@@ -165,6 +171,7 @@ export default function SignUp() {
               </Grid>
             </Grid>
             <Button
+              id="signupButton"
               type="submit"
               fullWidth
               variant="contained"

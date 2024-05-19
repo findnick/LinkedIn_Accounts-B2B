@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SignUp from './Pages/Signup.jsx'
 import Login from './Pages/Login.jsx'
+import Product from './Pages/Product.jsx'
 
 const routes = [
   {
@@ -22,6 +23,14 @@ const routes = [
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/product/:packageCost',
+    element: <Product />
+  },
+  {
+    path: '/products',
+    element: <Product />
   }
 ]
 

@@ -48,7 +48,7 @@ const TestNavbar = () => {
     <nav className="p-5 flex items-center justify-between break-normal">
       <div className="flex">
         <a href="/"><img src={logo} alt="" className="h-10 inline" /></a>
-        <button className="md:hidden block nav-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" name="menu" onClick={(e) => {
+        <button className="md:hidden nav-button flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" name="menu" onClick={(e) => {
             console.log(e.currentTarget.name);
             let list = document.querySelector('ul');
 
@@ -76,11 +76,10 @@ const TestNavbar = () => {
         })}
       </ul>
       <a
-        href={btnMeta.href}
+        href="#packages"
         className="section-button"
-        onClick={btnMeta.onClick}
       >
-        {btnMeta.text}
+        Join Us
       </a>
     </nav>
   );

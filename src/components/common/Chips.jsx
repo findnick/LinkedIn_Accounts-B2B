@@ -10,14 +10,14 @@ const Chips = () => {
                 <Chip label="50+ Monthly Meetings" />
             </div>
             <div className="chip">
-                <Chip label="Setup" />
+                <Chip label="Free Setup" />
             </div>
 
 
             <div className="chip">
             </div>
             <div className="chip">
-                <Chip label="Accounts" />
+                <Chip label="Real Accounts" />
             </div>
             <div className="chip">
             </div>

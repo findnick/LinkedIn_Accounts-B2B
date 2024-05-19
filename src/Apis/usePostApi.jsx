@@ -7,7 +7,7 @@ function usePostApi(path) {
 
   const fetch = async (data,header=null) => {
     try {
-      const response = await axios.post(`https://linkedbackendinfinal.vercel.app/api/${path}`, data, {headers:header})
+      const response = await axios.post(`https://94c5-111-88-225-80.ngrok-free.app/api/${path}`, data, {headers:header})
       console.log(response);
       return response
     } catch (error) {
