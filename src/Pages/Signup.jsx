@@ -11,8 +11,8 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useForm } from "react-hook-form";
+import { createTheme, ThemeProvider, withStyles } from "@mui/material/styles";
+import ReactPhoneInput from "react-phone-input-material-ui";
 import usePostApi from "../Apis/usePostApi";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -37,11 +37,26 @@ function Copyright(props) {
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
+const styles = (theme) => ({
+  field: {
+    margin: "10px 0",
+  },
+  countryList: {
+    ...theme.typography.body1,
+  },
+});
 const defaultTheme = createTheme();
 
-export default function SignUp(props) {
-  const {action} = props;
+function SignUp(props) {
+  const { action } = props;
   const [auth, setAuth] = useState(false);
+  const [error, setError] = useState({
+    name: false,
+    email: false,
+    emailText: "",
+    password: false,
+    phone: false,
+  });
 
   React.useEffect(() => {
     const token = localStorage.getItem("token");
@@ -51,36 +66,90 @@ export default function SignUp(props) {
       setAuth(false);
     }
   }, []);
-  
+
   const navigate = useNavigate();
   if (auth) {
     // return navigate("/");
   }
+
+  const [phoneValue, setPhoneValue] = useState("");
   const [postData, setPostData, response, fetch] = usePostApi("user/register");
   const handleSubmit = async (event) => {
     event.preventDefault();
-    document.getElementById('signupButton').disabled = true;
-    document.getElementById('signupButton').innerText  = "LOADING...";
+    setError({
+      name: false,
+      email: false,
+      emailText: "",
+      password: false,
+      phone: false,
+    });
+    document.getElementById("signupButton").disabled = true;
+    document.getElementById("signupButton").innerText = "LOADING...";
     const data = new FormData(event.currentTarget);
+
+    if (document.getElementById("phone").value.length < 9) {
+      error.phone = true;
+      setError({ ...error });
+      document.getElementById("phoneError").style.display = "block";
+      document.getElementById("signupButton").disabled = false;
+      document.getElementById("signupButton").innerText = "Sign Up";
+      return;
+    } else {
+      document.getElementById("nameError").style.display = "none";
+    }
     const user = {
-      name: data.get("firstName"),
+      name: data.get("firstName") + data.get("lastName"),
       email: data.get("email"),
-      phone: data.get("phone"),
+      phone: "+" + data.get("phone"),
       password: data.get("password"),
     };
     try {
       const response = await fetch(user);
+      document.getElementById("nameError").style.display = "none";
       console.log("The error is: ", response);
       if (response.data.token) {
-        sessionStorage.setItem("token", response.data.token)
+        sessionStorage.setItem("token", response.data.token);
         action();
         // return navigate("/");
       }
-    } catch (error) {
-      console.log("The Error is: ", error);
+    } catch (valError) {
+      console.log("The Error is: ", valError);
+      const res = valError.response.data;
+      if (res.errors) {
+        // alert("lot of errors");
+        const errors = res.errors.errors;
+        errors.forEach((err) => {
+          // alert(err.path);
+          switch (err.path) {
+            case "name":
+              // alert("name error");
+              error.name = true;
+              setError({ ...error });
+              document.getElementById("nameError").style.display = "block";
+              break;
+            case "email":
+              // alert("email error");
+              error.email = true;
+              error.emailText = "Please enter a valid email address";
+              setError({ ...error });
+              break;
+            case "password":
+              // alert("password error");
+              error.password = true;
+              setError({ ...error });
+              break;
+            default:
+              break;
+          }
+        });
+      } else if (res.msg === "User with this email already exists") {
+        error.email = true;
+        error.emailText = res.msg;
+        setError({ ...error });
+      }
     }
-    document.getElementById('signupButton').disabled = false;
-    document.getElementById('signupButton').innerText  = "Sign Up";
+    document.getElementById("signupButton").disabled = false;
+    document.getElementById("signupButton").innerText = "Sign Up";
   };
 
   return (
@@ -129,34 +198,66 @@ export default function SignUp(props) {
                   autoComplete="family-name"
                 />
               </Grid>
+              <span
+                id="nameError"
+                className="hidden mt-2 px-5 font-normal text-xs text-red-600"
+              >
+                {error?.name && "Name must be atleast 2 characters long."}
+              </span>
               <Grid item xs={12}>
                 <TextField
+                  error={error?.email && true}
                   required
                   fullWidth
+                  type="email"
                   id="email"
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  helperText={error?.email && error.emailText}
                 />
               </Grid>
               <Grid item xs={12}>
-                <TextField
+                {/* <TextField
                   required
                   fullWidth
                   name="phone"
                   label="Phone"
                   type="text"
                   id="phone"
+                /> */}
+              </Grid>
+              <input type="hidden" name="phone" id="phone" value={phoneValue} />
+              <Grid item xs={12}>
+                <ReactPhoneInput
+                  defaultCountry={"us"}
+                  regions={["america", "europe", "asia", "oceania", "africa"]}
+                  name="phone"
+                  id="phone"
+                  component={TextField}
+                  onChange={(value) => {
+                    setPhoneValue(value);
+                  }}
                 />
               </Grid>
+              <span
+                id="phoneError"
+                className="hidden mt-2 px-5 font-normal text-xs text-red-600"
+              >
+                {error?.phone && "Please enter a valid phone number"}
+              </span>
               <Grid item xs={12}>
                 <TextField
+                  error={error?.password && true}
                   required
                   fullWidth
                   name="password"
                   label="Password"
                   type="password"
                   id="password"
+                  helperText={
+                    error?.password && "Password should be 6 characters long"
+                  }
                   autoComplete="new-password"
                 />
               </Grid>
@@ -192,3 +293,5 @@ export default function SignUp(props) {
     </ThemeProvider>
   );
 }
+
+export default SignUp;

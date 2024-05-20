@@ -1,23 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function usePostApi(path) {
-  const [postData, setPostData] = useState('');
-  const [response, setResponse] = useState('');
+  const [postData, setPostData] = useState("");
+  const [response, setResponse] = useState("");
 
-  const fetch = async (data,header=null) => {
+  const fetch = async (data, header = null) => {
     try {
-      const response = await axios.post(`https://94c5-111-88-225-80.ngrok-free.app/api/${path}`, data, {headers:header})
+      const response = await axios.post(
+        `https://cbbe-111-88-225-88.ngrok-free.app/api/${path}`,
+        data,
+        { headers: header }
+      );
       console.log(response);
-      return response
+      return response;
     } catch (error) {
       console.log(response);
-      throw error
+      throw error;
     }
-  }
+  };
 
-
-  return [postData, setPostData, response, fetch]
+  return [postData, setPostData, response, fetch];
 }
 
-export default usePostApi
+export default usePostApi;

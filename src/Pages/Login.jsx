@@ -50,7 +50,7 @@ export default function Login() {
       setAuth(false);
     }
   }, []);
-  
+
   const navigate = useNavigate();
   if (auth) {
     return navigate("/");
@@ -63,7 +63,6 @@ export default function Login() {
       setTimeout(() => {
         // setError(false);
       }, 4000);
-
     }
   }, [error]);
 
@@ -84,7 +83,7 @@ export default function Login() {
       } else if (response.data.msg == "User with this email doesnot exists") {
         setError({ email: true });
       } else if (response.data.token) {
-        localStorage.setItem("token", response.data.token)
+        localStorage.setItem("token", response.data.token);
         return navigate("/");
       }
 

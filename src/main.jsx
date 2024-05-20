@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SignUp from './Pages/Signup.jsx'
 import Login from './Pages/Login.jsx'
 import Product from './Pages/Product.jsx'
+import Thankyou from './Pages/Thankyou.jsx'
 
 const routes = [
   {
@@ -31,6 +32,10 @@ const routes = [
   {
     path: '/products',
     element: <Product />
+  },
+  {
+    path: '/thankyou',
+    element: <Thankyou />
   }
 ]
 

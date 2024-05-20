@@ -1,4 +1,3 @@
-import ResponsiveAppBar from "./components/common/ResponsiveAppBar";
 import "../src/styles/App.css";
 import Chips from "./components/common/Chips";
 import Card from "./components/common/Card";
