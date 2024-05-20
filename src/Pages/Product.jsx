@@ -156,7 +156,7 @@ const Product = () => {
           <InputSlider setPrice={setCost} />
           <div className="packages flex flex-col flex-wrap justify-center">
             <Package
-              cost={packageCost * cost}
+              cost={packageCost}
               button="false"
               style={{ border: "1px solid var(--light)" }}
               onClick={onPackageClick}
